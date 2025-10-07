@@ -1,10 +1,14 @@
-<h1><em>Login form</em></h1>
+<h1><em>Form</em></h1>
+<p>  &copy; Patek Philippe Watches. All rights reserved</p>
 <hr>
-<form action="contact.html" method="post" border="1">
-    <table>
-      <tr>
-        <td><label for="username">Username:</label></td>
-        <td><input type="text" id="username" name="username" required></td>
+<fieldset>
+  <legend><b>Signup</b></legend>
+  <form action="contact.html" method="post">
+      <table>
+        <center>
+        <tr>
+          <td><label for="username">Username:</label></td>
+          <td><input type="text" id="username" name="username" required></td>
       </tr>
       <br>
       <tr>
@@ -23,6 +27,40 @@
       </tr>
       <br>
       <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age"></td>
+      </tr>
+      <br>
+      <tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number"></td>
+      </tr>
+      <br>
+      <tr>
+        <td><label for="dob">Date of Birth:</label></td>
+        <td><input type="date" id="dob" name="dob"></td>
+      </tr>
+      <br>
+      <tr>
+        <td>Enter your Country:</td>
+        <td>
+          <select id="country" name="country" required>
+            <option value="">-- Select your country --</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="india">India</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+          </select>
+        </td>
+      </tr>
+      <br>
+      <tr>
         <td><label for="email">Email:</label></td>
         <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
       </tr>
@@ -31,9 +69,18 @@
         <td><label for="feedback">Feedback:</label></td>
         <td><textarea id="textarea" name="feedback" placeholder="Enter your feedback about our service"></textarea></td>
       </tr>
+      </center>
     </table>
-  <input type="submit" value="Login">
+  <input type="submit" onclick="alert('Form submitted successfully!')" value="Signup">
 </form>
+</fieldset>
 <hr>
+<a href="./index.html">Back to Home</a>
+&nbsp; | &nbsp;
+<a href="./gallery.html">View Our Gallery of <abbr title="Patek Philippe Watches">P.P.</abbr></a>
+&nbsp; | &nbsp;
+<a href="./about.html">Learn More About Us</a>
 <h3>Any queries?</h3>
 <a href="mailto:kzaid2918@gmail.com">Email us</a>
+<br>
+<a href="https://github.com/zaidmehmood147">Visit our GitHub</a>
