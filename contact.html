@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="contactbody">
+  <div class="contactheading">
 <h1><em>Form</em></h1>
 <p>  &copy; Patek Philippe Watches. All rights reserved</p>
+</div>
 <hr>
-<fieldset>
+<fieldset id="fset">
   <legend><b>Signup</b></legend>
-  <form action="contact.html" method="post">
+  <form action="contact.html" method="post" id="form">
       <table>
-        <center>
         <tr>
           <td><label for="username">Username:</label></td>
           <td><input type="text" id="username" name="username" required></td>
@@ -69,18 +79,24 @@
         <td><label for="feedback">Feedback:</label></td>
         <td><textarea id="textarea" name="feedback" placeholder="Enter your feedback about our service"></textarea></td>
       </tr>
-      </center>
     </table>
   <input type="submit" onclick="alert('Form submitted successfully!')" value="Signup">
 </form>
 </fieldset>
 <hr>
-<a href="./index.html">Back to Home</a>
-&nbsp; | &nbsp;
-<a href="./gallery.html">View Our Gallery of <abbr title="Patek Philippe Watches">P.P.</abbr></a>
-&nbsp; | &nbsp;
-<a href="./about.html">Learn More About Us</a>
+<div class="navigationlinks">
+  <a href="./index.html">Back to Home</a>
+  &nbsp; | &nbsp;
+  <a href="./gallery.html">View Our Gallery of <abbr title="Patek Philippe Watches">P.P.</abbr></a>
+  &nbsp; | &nbsp;
+  <a href="./about.html">Learn More About Us</a>
+</div>
+<br>
+<div class="contactinfo">
 <h3>Any queries?</h3>
 <a href="mailto:kzaid2918@gmail.com">Email us</a>
 <br>
 <a href="https://github.com/zaidmehmood147">Visit our GitHub</a>
+</div>
+</body>
+</html>
